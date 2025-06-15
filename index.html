@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div id="logo">
-        <img
-          src="./assets/libre-clip-art-qbUAA5EpGgM-unsplash.png"
-          alt="logo"
-        />
-      </div>
+      <p>Header Logo</p>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#places">Some nice places</a></li>
         <li><a href="#quote">Quote</a></li>
       </ul>
     </header>
     <main>
-      <section id="home">
+      <section id="hero">
         <div>
           <h1>Traveling made easy</h1>
           <p>
@@ -30,11 +31,13 @@
           </p>
           <button>Sing up</button>
         </div>
-        <img src="./assets/woman-8587090_1280.png" alt="woman traveling" />
+        <div>
+          <img src="./assets/woman-8587090_1280.png" alt="woman traveling" />
+        </div>
       </section>
       <section id="places">
-        <h2>Some places to go:</h2>
-        <div>
+        <h2>Some places to go</h2>
+        <div class="container">
           <div>
             <img
               src="./assets/evan-sanchez-xsm6EJM1mP4-unsplash.jpg"
@@ -84,7 +87,7 @@
         </blockquote>
         <p>–Jawaharial Nehru</p>
       </section>
-      <section>
+      <section class="action">
         <div>
           <h3>Call to action! It's time!</h3>
           <p>

@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+:root {
+  --background: #1f2937;
+  --primary-color: #f9faf8;
+  --secondary-color: #e5e7eb;
+  --button-color: #3882f6;
+}
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+header li,
+a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 15px;
+}
+header p {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 900;
+}
+header,
+footer,
+#hero {
+  background-color: var(--background);
+}
+#hero h1 {
+  color: var(--primary-color);
+  font-size: 48px;
+  font-weight: 900;
+}
+#hero,
+header a {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+button {
+  background-color: var(--button-color);
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 18px;
+  padding: 6px 28px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid var(--primary-color);
+}
+#places > h2 {
+  color: var(--background);
+  font-size: 36px;
+  font-weight: 900;
+}
+#quote {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  color: var(--background);
+}
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 30px;
+}
+#hero img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#hero div {
+  width: 500px;
+}
+#hero h1,
+p,
+button {
+  margin-bottom: 20px;
+}
+#places {
+  padding: 50px 30px;
+  text-align: center;
+}
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container div {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  text-align: justify;
+}
+.container img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#quote {
+  padding: 50px 300px;
+  text-align: center;
+}
+.action {
+  padding: 50px 200px;
+}
+.action > div {
+  background-color: var(--button-color);
+  border-radius: 10px;
+  padding: 30px 60px;
+  color: var(--primary-color);
+}
+footer {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+blockquote + p {
+  text-align: right;
+  font-weight: 900;
+}
